@@ -1,0 +1,30 @@
+advanced-rag-app/
+│
+├── backend/
+│   ├── main.py
+│   ├── routes/
+│   │   ├── upload.py
+│   │   ├── query.py
+│   │
+│   ├── services/
+│   │   ├── loader.py
+│   │   ├── chunking.py
+│   │   ├── embeddings.py
+│   │   ├── rag.py
+│   │   ├── session_manager.py   # 🔥 multi-user memory
+│   │
+│   ├── db/
+│   │   └── (auto-created per session)
+│   │
+│   └── requirements.txt
+│
+└── frontend/
+    ├── src/
+    │   ├── App.js
+    │   ├── components/
+    │   │   ├── Upload.js
+    │   │   ├── Chat.js
+    │   │
+    │   ├── services/api.js
+    │
+    └── package.json
