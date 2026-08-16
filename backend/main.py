@@ -3,6 +3,9 @@ from backend.routes import upload, query,delete
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+@app.get("/")
+def root():
+    return {"status": "RAG API is running"}
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # or ["http://localhost:5173"]
